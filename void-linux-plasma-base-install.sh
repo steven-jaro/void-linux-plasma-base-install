@@ -8,7 +8,7 @@ xbps-install -Suy \
   sddm kde-plasma kde-baseapps \
   NetworkManager kdegraphics-thumbnailers ffmpegthumbs \
   pipewire pipewire-devel alsa-pipewire \
-  wireplumber elogind kdeconnect xorg
+  wireplumber elogind kdeconnect xorg noto-fonts-cjk noto-fonts-emoji dejavu-fonts-ttf
 
 xbps-install -Suvy
 xbps-remove -Oovy
