@@ -10,6 +10,9 @@ xbps-install -Suy \
   pipewire pipewire-devel alsa-pipewire \
   wireplumber elogind kdeconnect
 
+xbps-install -Suvy
+xbps-remove -Oovy
+
 ### 2. Añadir Flathub a Flatpak ###
 flatpak remote-add --if-not-exists flathub \
   https://flathub.org/repo/flathub.flatpakrepo
