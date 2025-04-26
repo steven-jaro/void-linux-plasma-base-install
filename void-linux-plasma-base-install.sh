@@ -8,7 +8,7 @@ xbps-install -Suy \
   sddm kde-plasma kde-baseapps \
   NetworkManager kdegraphics-thumbnailers ffmpegthumbs \
   pipewire pipewire-devel alsa-pipewire \
-  wireplumber elogind kdeconnect
+  wireplumber elogind kdeconnect xorg
 
 xbps-install -Suvy
 xbps-remove -Oovy
