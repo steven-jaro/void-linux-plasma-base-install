@@ -6,7 +6,7 @@ xbps-install -Suy \
   flatpak git base-devel gnome-software octoxbps \
   sddm kde-plasma kde-baseapps \
   NetworkManager kdegraphics-thumbnailers ffmpegthumbs \
-  pipewire pipewire-devel pipewire-pulse alsa-plugins-pipewire \
+  pipewire pipewire-devel alsa-pipewire \
   wireplumber elogind kdeconnect
 
 ### 2. Añadir Flathub a Flatpak ###
