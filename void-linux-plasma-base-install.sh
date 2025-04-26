@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -e
+xbps-install -Suvy
 
 ### 1. Instalar paquetes esenciales ###
 xbps-install -Suy \
