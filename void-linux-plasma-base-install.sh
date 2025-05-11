@@ -50,6 +50,8 @@ EOF
 
 sudo chmod +x /usr/local/bin/start-pipewire.sh
 
+# Deactivate Kwalletd
+echo -e "[Wallet]\nautostart=false" > ~/.config/kwalletrc
 
 # Reboot to apply changes
 sudo reboot
