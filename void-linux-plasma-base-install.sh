@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
+# Fix slow wifi card
+
+echo "options iwlmvm power_scheme=1" | sudo tee /etc/modprobe.d/iwlmvm.conf
+
 # Update system
 xbps-install -Suvy
 
@@ -46,9 +50,6 @@ EOF
 
 sudo chmod +x /usr/local/bin/start-pipewire.sh
 
-# Fix slow wifi card
-
-echo "options iwlmvm power_scheme=1" | sudo tee /etc/modprobe.d/iwlmvm.conf
 
 # Reboot to apply changes
 sudo reboot
