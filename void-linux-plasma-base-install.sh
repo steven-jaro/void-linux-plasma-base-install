@@ -53,5 +53,8 @@ sudo chmod +x /usr/local/bin/start-pipewire.sh
 # Deactivate Kwalletd
 echo -e "[Wallet]\nautostart=false" > ~/.config/kwalletrc
 
+# Add user to the video and audio groups
+usermod -aG audio,video $USER
+
 # Reboot to apply changes
 sudo reboot
